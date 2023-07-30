@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Molakisi - Inscription user</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../public/images/logo.png" type="image/x-icon">
+    <!--Google icons-->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!--Bootstrap icon-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/tutor.css">
+    <link rel="stylesheet" href="../css/other_style.css">
+    <link rel="stylesheet" href="../css/responsive_style.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="header__large">
+            <!--logo du header-->
+            <div class="header__logo">
+                <a href="/home"><img src="../images/logo_black.png" alt=""></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="/home">Accueil</a></li>
+                    <li><a href="/tutors_devenir">Devenir un répétiteur</a></li>
+                    <li><a href="/trouver_tutors">Trouver un répétiteur</a></li>
+                    <li><a href="#" class="header__btn"
+                            onclick="document.getElementById('id01').style.display='block'"><i
+                                class=" bi bi-box-arrow-in-right"></i> Login</a></li>
+
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+        <div class="header__respo">
+            <div class="logo_and_burger">
+                <!--logo du header-->
+                <div class="logo">
+                    <a href="./home"><img src="../images/logo_black.png" alt=""></a>
+                </div>
+                <!--icon burger-->
+                <div class="burger" >
+                    <a href="#"  id="affiche__menu"  onclick="toggleBloc()" >
+                            <i class="bi bi-menu-button-wide-fill" ></i>
+                    </a>
+                </div>
+            </div>
+            
+            <nav class="menu__burger"  id="mon-bloc">
+                <ul>
+                    <li><a href="./home">Accueil</a></li>
+                    <li><a href="./tutors_devenir">Devenir un répétiteur</a></li>
+                    <li><a href="./trouver_tutors">Trouver un répétiteur</a></li>
+                </ul>
+            </nav>
+            
+        </div>
+
+        <main>
+            <!-- bloc pour l'inscription_user -->
+           <section class="container__inscrip">
+                <form id="regForm" class="input__modal" action="/auth/register_eleve" method="POST">
+
+                    <h2>Formulaire d’inscription  </h2>
+                    
+
+                    <!-- One "tab" for each step in the form: -->
+                    <div class="tab"><h4>Coordonnées de l’apprenant :</h4>
+                        <p><input type="text" placeholder="Nom..." name="nom" oninput="this.className = ''"></p>
+                        <p><input type="text" placeholder="Post Nom..." name="prenom" oninput="this.className = ''"></p>
+                        <p><input type="text" placeholder="Prenom..." name="postnom" oninput="this.className = ''"></p>
+                    </div>
+
+                    <div class="tab"><h4>Coordonnées de l’apprenant :</h4>
+                        <div>
+                            <label for="dateNais">Sexe</label>
+                            <p><input type="text" placeholder="Prenom..." name="sexe" oninput="this.className = ''"></p>
+                        </div>
+                        <div>
+                            <label for="dateNais">Date de Naissance</label>
+                            <input type="date" name="naissance" oninput="this.className = ''">
+                        </div>
+
+                        <div>
+                            <input type="text" placeholder="Classe..." name="classe" oninput="this.className = ''">
+                        </div>
+
+                    </div>
+
+                    <div class="tab"><h4>Coordonnées de l’apprenant :</h4>
+                        <div>
+                           <input type="text" placeholder="Sujet..." name="sujet" oninput="this.className = ''">
+                        </div>
+                        <div>
+                            <input type="text" placeholder="Objectif..." name="objectif" oninput="this.className = ''">
+                        </div>
+                        <div>
+                            <input type="text" placeholder="Adresse..." name="adresse" oninput="this.className = ''">
+                        </div>
+                       
+                    </div>
+
+                    <div class="tab"><h4>Coordonnées du parent:</h4>
+                        <div>
+                            <input type="text" placeholder="Tuteur..." name="tuters" oninput="this.className = ''">
+                        </div>
+                        <div>
+                            <input type="email" placeholder="Email..." name="email" oninput="this.className = ''">
+                        </div>
+                        <div>
+                            <input type="tel" placeholder="Téléphone..." name="phoneP" oninput="this.className = ''">
+                        </div>
+                        <div>
+                            <b>Le frais d'inscription c'est à 5$</b>
+                        </div>
+                    </div>
+
+                    <div style="overflow:auto; margin-top: 2rem;">
+                        <div class="btn__connexion ">
+                            <button type="button" id="prevBtn" onclick="nextPrev(-1)">Précedent</button>
+                            <button type="button" id="nextBtn" onclick="nextPrev(1)">Suivant</button>
+                        </div>
+                    </div>
+
+                    <!-- Circles which indicates the steps of the form: -->
+                    <div style="text-align:center;margin-top:40px;">
+                        <span class="step"></span>
+                        <span class="step"></span>
+                        <span class="step"></span>
+                        <span class="step"></span>
+                    </div>
+
+                </form>
+            </section>
+        </main>
+            <!-- footer molakisi -->
+            <footer class="container__footer">
+                <div class="footer__logo">
+                    <a href="index"><img src="../images/logo_white.png" alt=""></a>
+                </div>
+                <div class="footer__text">
+                    <h3>A Propos</h3>
+                    <p>
+                        Molakisi Services vous connecte avec les répétiteurs expérimentés et qualifiés proche de chez vous. C’est un service spécialisé dans dans le cours à domicile et dans l'accompagnement scolaire des élèves. 
+                    </p>
+                </div>
+                <div class="footer__text">
+                    <h3>Nos Adresses</h3>
+                    <p>
+                        Av. Sergent Moke n°10.651 C/Kintambo Cfr/Rond point SOCIMAT/ Dans l’enceinte de BOUKIN. 
+                    </p>
+                </div>
+                <div class="footer__text">
+                    <h3>Souscrire à notre newsletter </h3>
+                    <p>
+                        Recevez des informations sur les techniques d’accompagnement scolaire et les offres de Molakisi Service. 
+                    </p>
+                    <div class="newsletters">
+                        <input type="text" placeholder="Votre mail..." oninput="this.className = ''" class="newsletters__btn"> <br>
+                        <button type="submit" class="newsletters__btn">Souscrire</button>
+    
+                    </div>
+                    <ul>
+                        <li><a href=" https://api.whatsapp.com/send/?phone=243893404985&text&type=phone_number&app_absent=0 "><i class="bi bi-whatsapp"></i></a></li>
+                        <li><a href="https://web.facebook.com/molakisiservices/?_rdc=1&_rdr "><i class="bi bi-facebook"></i></a></li>
+                        <li><a href=""><i class="bi bi-twitter"></i></a></li>
+                        <li><a href=""><i class="bi bi-pinterest"></i></a></li>
+                    </ul>
+                </div>
+    
+            </footer>
+            <!-- footer molakisi -->
+    
+
+
+        <div class="copyright">
+            <p>Copyright @Molakisi2023</p>
+        </div>
+        <script src="../js/inscription_user.js"></script>
+        <script src="../js/modal.js"></script>
+
+
+</body>
+
+</html>

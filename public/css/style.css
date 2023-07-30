@@ -1,0 +1,505 @@
+:root{
+    --primary-color: #0a88cc;
+    --secondary-color: #CCA659;
+    --last-color: #525050;
+    --other-color: #ececec;
+    --profiler-color: #01304A;
+    --partner-color: #FAE0D0;
+    --font-size-main: 16px;
+    --padding-main: 1rem 5rem;
+    --padding-respo: 1rem;   
+}
+/*---------------------ours variables-----------------------*/
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: var(--last-color);
+}
+/*---------------------headers-----------------------*/
+.header__respo{
+    display: none;
+}
+.header__large{
+    background-color: #eeeeee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 2rem;  
+}
+.header__large .header__logo img{
+    width: 10rem;
+}
+/* continu la modification pour créer le burger */
+.header__large ul{
+    display: flex;    
+    gap: 1.05rem;
+    list-style: none;
+}
+nav a{
+    color: var(--last-color);
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+nav a:hover{
+    color: #111;
+}
+nav a:active{
+    color: var(--primary-color);
+}
+nav .header__btn{
+    padding: 0.4rem 1.7rem;
+    border-radius: 3rem;
+    margin-left: 0rem;
+    font-weight: bold;
+}
+/*---------------------section une =  presentation de trouver un répétiteur-----------------------*/
+.repetiteur{
+    background-image: url(../images/bg_father.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    max-width: 100%;
+    display: flex;
+    justify-content: left;
+    padding-left: 6rem;
+}
+.repetiteur__bloc__text{
+    margin-top: 20vh;
+}
+.repetiteur__bloc__text p{
+    width: 40%;
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.repetiteur__bloc__text a,.header__btn{
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1rem 1.5rem;
+    margin: 5rem 0 0 7rem;
+    border-radius: 0.8rem;
+    text-transform: uppercase;
+    border: 2px transparent solid;
+    font-size: 1rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.3s ease;
+} 
+.repetiteur__bloc__text a:hover, 
+.header__btn:hover{
+    background-color: transparent;
+    color: var(--primary-color);
+    border: 2px #0054e573 solid;
+    font-weight: 700;
+}
+/*---------------------section deux =  bloc bienvenue -----------------------*/
+
+.bloc__bienvenue{
+    background-color: var(--secondary-color);
+    text-align: center;
+    padding: 1rem 0;
+    color: #fff;
+}
+.bloc__bienvenue h2{
+    font-weight: bold;
+    font-size: 1.6rem;
+
+}
+/*---------------------section trois =  les 4 blocs-----------------------*/
+.container__section4{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 3.5rem;
+    padding: 4rem 7rem;
+}
+.container__section4 div{
+    background-color: var(--other-color) ;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    text-align: center;
+}
+.container__section4 .icon__bloc{
+    font-size: 8rem;
+    margin-bottom: 1rem;
+}
+/*---------------------section quatre = info molakisi-----------------------*/
+.info__molakisi{
+    display: flex;
+    /* gap: 2rem */
+    /* padding: var(--padding-main); */
+
+}
+.info__image img{
+    width: 35rem;
+    height: 30rem;
+}
+.info__text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    height: 30rem;
+    padding: 1rem 3rem;
+    /* background-color: var(--primary-color); */
+    background-color: var(--other-color);
+}
+.info__text h3{
+    font-size: 1.7rem;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+}
+.info__text h4{
+    margin: 1rem 0;
+    font-size: 1.2rem;
+}
+
+/*---------------------section cinq = faq molakisi-----------------------*/
+.container__faq{
+    background-image: url(../images/bg_faq.jpg);
+    background-size: cover;
+    background-position: center;
+    height: max-content;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    padding: var(--padding-main);
+
+}
+.faq__title{
+    text-transform: uppercase;
+    line-height: 6.6rem;
+    margin-top: 8rem;
+}
+.faq__title h2{
+    font-size: 15rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+.faq__title b{
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    padding-left: 1rem;
+}
+.faq__collapse{
+    margin-bottom: 1rem;
+}
+
+/* le collaspe */
+.collapsible {
+    background-color: var(--last-color);
+    color: #eee;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .collapsible:hover {
+    background-color: var(--primary-color);
+    border: 3px solid var(--primary-color);
+    color: var(--other-color);
+  }
+  
+  /* Style the collapsible content. Note: hidden by default */
+  .content {
+    padding: 1rem;
+    display: none;
+    overflow: hidden;
+    background-color: var(--last-color);
+    color: var(--other-color);
+  }  
+/*---------------------section 6 = partner molakisi-----------------------*/
+.container__partner{
+    background-color: var(--other-color);
+    padding: 6rem 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    gap: 6rem;
+}
+.partner__text{
+    width: 75%;
+    font-weight: 600;
+}
+.partner__text h2{
+    color: var(--profiler-color);
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+}
+.partner__logo{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 1.5rem
+}
+.partner__logo img{
+    width: 8rem;
+    height: 6rem;
+}
+/*---------------------footer molakisi-----------------------*/
+.container__footer{
+    background-color: var(--primary-color);
+    color: var(--other-color);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1.5rem;
+    padding: 6rem 3rem;
+}
+.footer__logo img{
+    max-width: 20rem;
+}
+.footer__text h3{
+    margin-bottom: 2rem;
+}
+.footer__text{
+    width: 35%;
+    height: max-content;
+}
+.footer__text p{
+    font-weight: bolder;
+}
+.footer__text ul{
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: left;
+    gap: 1rem;
+}
+.footer__text ul a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.4rem;
+}
+.newsletters__btn{
+    border: none;
+    padding: 0.6rem;
+    border-radius: 0.3rem;
+    margin: 0.2rem 0;
+}
+.newsletters button{
+    background-color: transparent;
+    border: 2px inset var(--other-color);
+    color: var(--other-color);
+}
+.newsletters button:active{
+    background-color: var(--last-color);
+    color: var(--other-color);
+    border: none;
+}
+.copyright{
+    background-color: #111;
+    padding: var(--padding-main);
+    text-align: center;
+    font-size: 1.1rem;
+    color: #fff;
+}
+.menu__burger ul{
+    padding: var(--padding-respo);
+    list-style: none;
+}
+#mon-bloc{
+    display: none;
+}
+/*---------------le responsive---------*/
+
+@media only screen and (min-width: 300px) and (max-width: 850px) {
+    /*header-*/
+    .header__large{
+        width: 100%;
+        display: none;
+        background-color: transparent;
+    }
+    .header__respo{
+        display: block;
+        /* padding: var(--padding-respo); */
+        padding: 0.5rem 1rem; 
+        background-color: #eeeeee;
+    }
+    .logo_and_burger{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center; 
+    }
+    .logo_and_burger .burger{
+        font-size: 3rem;
+    }
+    .burger a{
+        text-decoration: none;
+        color: var(--primary-color);
+    }
+    .logo_and_burger .logo img{
+        width: 10rem;
+    }
+    .header__respo .menu__burger ul{
+        padding: var(--padding-respo);
+        list-style: none;
+        /* display: none; */
+    }
+    .header__respo .menu__burger li{
+        margin-bottom: 0.8rem;
+    }
+    
+    /*-----------------pour le burger--------------------*/
+    
+/*---------------------section une =  presentation de trouver un répétiteur-----------------------*/
+    .repetiteur{        
+        /* padding: 0rem 0.5rem; 
+        display: flex;
+        justify-content: center;
+        align-items: center;*/
+        padding: 0;
+
+    }
+    .bg_respo{
+        background-color: #01304a6e; /*la bg du respo */
+        color: var(--other-color);
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .repetiteur__bloc__text{
+        text-align: center;
+    }
+    .repetiteur__bloc__text p{
+        width: 100%;
+        font-size: 1.5rem;
+        padding: var(--padding-respo);
+    }
+    .repetiteur__bloc__text a{
+        padding: var(--padding-respo);
+        margin: 0;
+        font-size: 0.8rem;
+        text-align: center;
+    }
+    .repetiteur__bloc__text a:hover{
+        border: 4px inset var(--profiler-color);
+        background-color: transparent;
+        color: var(--profiler-color);
+        font-size: 0.8rem;
+    }
+/*---------------------section deux =  bloc bienvenue -----------------------*/
+    .bloc__bienvenue{
+        padding: 1rem 0;
+        text-align: center;
+    }
+    .bloc__bienvenue h2{
+        font-size: 1.1rem;
+    }
+/*---------------------section trois =  les 4 blocs-----------------------*/
+    .container__section4{
+        flex-direction: column;
+        gap: 1rem;
+        padding: var(--padding-respo);
+        text-align: center;
+    }
+    .container__section4 div{
+        padding: var(--padding-respo);
+        margin-bottom: 1rem;
+    }
+/*---------------------section quatre = info molakisi-----------------------*/
+    .info__molakisi{
+        flex-direction: column;
+        justify-content: center;
+        gap: 0.2rem;
+        padding: var(--padding-respo);
+    }
+    .info__image img{
+        width: 100%;
+        border-radius: 1rem;
+    }
+    .info__text{
+        margin: 1rem 0;
+        padding: 1.2rem;
+    }
+    .info__text h3{
+        font-style: 1rem;
+        margin-bottom: 0.5rem;
+        line-height: 1.8rem;
+    }
+    .info__text h4{
+        margin: 0.2rem;
+        font-size: 1rem;
+    }
+
+/*---------------------section cinq = faq molakisi-----------------------*/
+    .container__faq{
+        padding: 3rem 1rem 8rem 1rem;
+    }
+    .faq__title{
+        line-height: 3.4rem;
+        margin-top: 0rem;
+    }
+    .faq__title h2{
+        font-size: 8rem;
+    }
+    .faq__title b{
+        font-size: 0.6rem;
+        padding-left: 0.5rem;
+    }
+    .faq__text p{
+        width: 82%;
+        margin-bottom: 2rem;
+    }
+    .faq__text a{
+        margin: 8rem 0;
+        color: #fff;
+    }
+/*---------------------section 6 = partner molakisi-----------------------*/
+    .container__partner{
+        padding: 3rem 2rem;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .partner__text{
+        width: 100%;
+        text-align: justify;
+    }
+    .partner__text h2{
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+    .partner__logo{
+        gap: 1.3rem
+    }
+    .partner__logo img{
+        width: 100%;
+        height: 10rem;
+        border-radius: 1.5rem;
+    }
+
+/*---------------------footer molakisi-----------------------*/
+.container__footer{
+    flex-direction: column;
+    gap: 2rem;
+    padding: var(--padding-respo)
+}
+.footer__logo img{
+    max-width: 18rem;
+}
+
+.footer__text{
+    width: 100%;
+}
+.copyright{
+    font-size: 1rem;
+}
+
+}

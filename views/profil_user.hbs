@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Molakisi - Profil User</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../public/images/logo.png" type="image/x-icon">
+    <!--Google icons-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!--Bootstrap icon-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/other_style.css">
+    
+</head>
+<body>
+    
+    <header>
+        <div class="header__large">
+            <!--logo du header-->
+            <div class="header__logo">
+                <a href="./home.hbs"><img src="../images/logo_black.png" alt=""></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="/home">Accueil</a></li>
+                    <li><a href="/tutors_devenir">Devenir un répétiteur</a></li>
+                    <li><a href="/trouver_tutors">Trouver un répétiteur</a></li>
+                    <li><a href="#" class="header__btn"
+                            onclick="document.getElementById('id01').style.display='block'"><i
+                                class=" bi bi-box-arrow-in-right"></i> Login</a></li>
+
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+        <div class="header__respo">
+            <div class="logo_and_burger">
+                <!--logo du header-->
+                <div class="logo">
+                    <a href="./home.html"><img src="../../public/images/logo_black.png" alt=""></a>
+                </div>
+                <!--icon burger-->
+                <div class="burger" >
+                    <a href="#"  id="affiche__menu"  onclick="toggleBloc()" >
+                            <i class="bi bi-menu-button-wide-fill" ></i>
+                    </a>
+                </div>
+            </div>
+            
+            <nav class="menu__burger"  id="mon-bloc">
+                <ul>
+                    <li><a href="./home.html">Accueil</a></li>
+                    <li><a href="./tutors_devenir.html">Devenez un répétiteur</a></li>
+                    <li><a href="./trouver_tutors.html">Trouver un répétiteur</a></li>
+                    <li><a href="">FAQ</a></li>
+                    <li><a href="#" class="header__btn"
+                            onclick="document.getElementById('id01').style.display='block'"><i
+                                class=" bi bi-box-arrow-in-right"></i> Login</a></li>
+    
+                </ul>
+            </nav>
+            
+        </div>
+
+    <main>
+      <section class="container__profil">
+        <div class="profil__img">
+            <h3>Votre profil</h3>
+            <div class="img__and__btn">
+                <img src="../../public/images/icon_contact.png" alt=""> 
+                <h4>John Doe</h4>
+            </div>
+            <div>
+                <p><i  class=" bi bi-phone"></i> +243 81 77 23 066.</p>
+                <p><i  class=" bi bi-box"></i> Lorem, ipsum.</p>
+                <p><i  class=" bi bi-localisation"></i> Lorem, ipsum.</p>
+                <p><i  class=" bi bi-box-arrow-in-right"></i> Lorem, ipsum.</p>
+            </div>
+        </div>
+        <div class="profil__text">
+            <h3>Informations</h3>
+            <hr>
+            <div>
+                <p><b>Objectifs  </b>:</p>
+                <p>
+                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Tempore in dolores soluta exercitationem ex, quo consequuntur 
+                    explicabo nesciunt libero? Architecto, corporis voluptates 
+                    ducimus aspernatur consectetur nobis sit quos dolorum minus.
+                </p>
+                
+            </div>
+
+            <div>
+                <p><b>Sujets  </b>:</p>
+                <p>
+                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Tempore in dolores soluta exercitationem ex, quo consequuntur 
+                    explicabo nesciunt libero? Architecto, corporis voluptates 
+                    ducimus aspernatur consectetur nobis sit quos dolorum minus.
+                </p>
+                
+            </div>
+
+            <div>
+                <p><b>Tuteurs  </b>:</p>
+                <p>
+                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Tempore in dolores soluta exercitationem ex, quo consequuntur 
+                    explicabo nesciunt libero? Architecto, corporis voluptates 
+                    ducimus aspernatur consectetur nobis sit quos dolorum minus.
+                </p>
+                
+            </div>
+            
+        </div>
+
+
+      </section>
+      <!--article>
+        <div class="article-wrapper">
+          <figure>
+            <img src="../../public/images/child__course.jpg" alt="" />
+          </figure>
+          <div class="article-body">
+            <h2>This is some title</h2>
+            <p>
+              Curabitur convallis ac quam vitae laoreet. Nulla mauris ante, euismod sed lacus sit amet, congue bibendum eros. Etiam mattis lobortis porta. Vestibulum ultrices iaculis enim imperdiet egestas.
+            </p>
+            <a href="#" class="read-more">
+              Read more <span class="sr-only">about this is some title</span>
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </article-->
+
+    </main>
+
+      <!-- footer molakisi -->
+      <footer class="container__footer">
+        <div class="footer__logo">
+            <a href="index.html"><img src="../../public/images/logo_white.png" alt=""></a>
+        </div>
+        <div class="footer__text">
+            <h3>A Propos</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam perspiciatis
+                labore unde quasi assumenda dolorem, corrupti
+            </p>
+        </div>
+        <div class="footer__text">
+            <h3>Nos Adresses</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam perspiciatis
+                labore unde quasi assumenda dolorem, corrupti
+
+            </p>
+        </div>
+        <div class="footer__text">
+            <h3>Rejoinez nous </h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur consectetur
+                consecteturconsectetur, Laboriosam perspiciatis
+            </p>
+            <ul>
+                <li><a href=""><i class="bi bi-instagram"></i></a></li>
+                <li><a href=""><i class="bi bi-facebook"></i></a></li>
+                <li><a href=""><i class="bi bi-snapchat"></i></a></li>
+                <li><a href=""><i class="bi bi-pinterest"></i></a></li>
+            </ul>
+        </div>
+
+    </footer>
+    <!-- footer molakisi -->
+
+
+    <div class="copyright">
+        <p>Copyright @Molakisi2023</p>
+    </div>
+    <script src="../js/inscription_user.js"></script>
+    <script src="../js/modal.js"></script>
+
+   
+</body>
+</html>

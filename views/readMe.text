@@ -1,0 +1,12 @@
+#-----------les Pages------------------------------------#
+1.Home : c'est l'accueil, il contient un formulaire de login User, pour qu'un User se connecte à son compte
+    après connexion, l'user va tomber sur la page Profil user pour voir son Profil
+2.Inscription_user : le formulaire d'inscription de utilisateur, c'est formulaire est accessible après avoir
+    effectuer le choix de répétiteur, il remplit les infos de l'enfant et du parent dans ce formulaire
+3.Profil_user :  la page qui affiche les informations concernant l'user,
+     elle est disponible juste après la connexion de l'user
+4.trouver_tutor : la page contient un formulaire dans le btn login, qui permet à user de se connecter et 
+    dans la page, on affiche tous les répétiteurs inscritent et valider sur Molakisi, pour que l'user fasse son choix
+
+5.tutors_devenir : aucun formulaire juste les btn qui permet d'acceder au formulaire d'inscription de répétiteur
+6.tutors_postuler : le formulaire d'inscription de répétiteur

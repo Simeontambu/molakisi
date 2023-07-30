@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Molakisi - Connexion répétiteur</title>
+    <!-- lien Poppins -->
+    <link rel="shortcut icon" href="../images/Original.png" type="image/x-icon">
+    <!--Google icons-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!--Bootstrap icon-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/other_style.css">
+    <link rel="stylesheet" href="../css/tutor.css">
+    <link rel="stylesheet" href="../css/responsive_style.css">
+    
+</head>
+<body>
+    <header>
+        <div class="header__large">
+            <!--logo du header-->
+            <div class="header__logo">
+                <a href="/"><img src="../images/logo_black.png" alt=""></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="/">Accueil</a></li>
+                    <li><a href="/tutors_devenir">Devenir un répétiteur</a></li>
+                    <li><a href="/trouver_tutors">Trouver un répétiteur</a></li>
+                    <li><a href="#" class="header__btn"
+                            onclick="document.getElementById('id01').style.display='block'"><i
+                                class=" bi bi-box-arrow-in-right"></i> Login</a></li>
+
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+    <div class="header__respo">
+        <div class="logo_and_burger">
+            <!--logo du header-->
+            <div class="logo">
+                <a href="/"><img src="../images/logo_black.png" alt=""></a>
+            </div>
+            <!--icon burger-->
+            <div class="burger" >
+                <a href="#"  id="affiche__menu"  onclick="toggleBloc()" >
+                        <i class="bi bi-menu-button-wide-fill" ></i>
+                </a>
+            </div>
+        </div>
+        
+        <nav class="menu__burger"  id="mon-bloc">
+            <ul>
+                <li><a href="/">Accueil</a></li>
+                <li><a href="/tutors_devenir">Devenez un répétiteur</a></li>
+                <li><a href="/trouver_tutors">Trouver un répétiteur</a></li>
+                <li><a href="">FAQ</a></li>
+                <li><a href="#" class="header__btn"
+                        onclick="document.getElementById('id01').style.display='block'"><i
+                            class=" bi bi-box-arrow-in-right"></i> Login</a></li>
+
+            </ul>
+        </nav>
+        
+    </div>
+
+    <main>
+         <!-- bloc pour l'inscription -->
+         <section>
+            <div class="container__inscription">
+                <form class="modal-content form__postuler" action="/auth/submits" method="POST" enctype="multipart/form-data">
+                    <div class="container__modal">
+                        <h2>Postulez pour Devenir Tuteur</h2>
+                        <!-- <p>Réjoins nous Molakisi avec des tuteurs de qualités et qualifiés.</p> -->
+                        <hr>
+                        <div class="input__modal">
+                            <div class="modal__flex">
+                                <input type="text" placeholder="Nom" name="nom" autocomplete="off" required>
+                                <input type="text" placeholder="Postnom" name="postnom" autocomplete="off" required>
+                            </div>
+                            <div class="modal__flex">
+                                <input type="text" placeholder="Prenom" name="prenom" autocomplete="off" required>
+                                <input type="text" placeholder="Sexe" name="sexe" autocomplete="off" required>
+                            </div>
+                            <!-- <div class="modal__flex">
+                                <input type="text" placeholder="Lieu de naissance" name="lieuNais" autocomplete="off" required>
+                                <input type="date" placeholder="Date de naissance" name="dateNais" autocomplete="off" required>
+                            </div> -->
+                            <div class="modal__flex">
+                                <input type="text" placeholder="Adresse mail" name="email" autocomplete="off" required>
+                                <input type="text" placeholder="Téléphone" name="phone" autocomplete="off" required>
+                            </div>
+                            <div class="modal__flex">
+                                <input type="text" placeholder="Montant Mensuel" name="montant" autocomplete="off" required>
+                            </div>
+                            <div class="">
+                                <label for="text"><b>Votre CV</b></label> <br>
+                                <input type="file" placeholder="Votre CV" name="file" autocomplete="off" required>
+                            </div>
+                            <div class="">
+                                <label for="text"><b>Photo Profil</b></label> <br>
+                                <input type="file" placeholder="Choisir photo" name="photo" autocomplete="off" required>
+                            </div>
+
+                            <input type="text" placeholder="Année d'expérience" name="anneExp" autocomplete="off" required>
+                            <textarea  class="input__modal" placeholder="Cours enseignés" name="cours" autocomplete="off" ></textarea>   
+                            <textarea  class="input__modal" placeholder="Ecole d'attache..." name="ecole" autocomplete="off" ></textarea>   
+                           
+                        </div>
+                
+                        <!-- <label for="psw"><b>Mot de passe</b></label> -->
+                        <div class="clearfix btn__connexion">
+                            <button type="submit" class="connexion" onclick="document.getElementById('id01').style.display='block'" value="Upload">Postulez</button>
+                        </div>
+                
+                        
+                        <hr>
+                        <div class="modal__bottom__form">
+                            <!-- <p>Déjà membre ?, <a href="../home/" class="modal__bottom__a">Se connecter</a> </p> -->
+                            <a href="/home" class="modal__bottom__a"> Retour</a>
+                        </div>
+
+                
+                        <!-- <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p> -->
+                
+                        
+                    </div>
+                </form>
+            </div>
+
+            
+        </section>
+
+          <!-- Le modal pour la notification -->
+          <section>
+            <div id="id01" class="modal">
+                <div class="modal-content" id="modal_notif">
+                    <h2>Notifications</h2>
+                    <h4>Bravo !, Nous avons recu toutes vos informations avec succès et nous allons vous contacter sous peu</h4>
+                        <p>
+                            <a href="./home.html" class="modal__bottom__a">Confirmer</a>
+                        </p>
+                </div>
+            </div>
+        </section>
+        <!-- Le modal pour la notification -->
+
+
+    </main>
+
+   
+
+
+
+
+
+      <!-- footer molakisi -->
+      <footer class="container__footer">
+        <div class="footer__logo">
+            <a href="index.html"><img src="../../public/images/logo_white.png" alt=""></a>
+        </div>
+        <div class="footer__text">
+            <h3>A Propos</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam perspiciatis
+                labore unde quasi assumenda dolorem, corrupti
+            </p>
+        </div>
+        <div class="footer__text">
+            <h3>Nos Adresses</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam perspiciatis
+                labore unde quasi assumenda dolorem, corrupti
+
+            </p>
+        </div>
+        <div class="footer__text">
+            <h3>Rejoinez nous </h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur consectetur
+                consecteturconsectetur, Laboriosam perspiciatis
+            </p>
+            <ul>
+                <li><a href=""><i class="bi bi-instagram"></i></a></li>
+                <li><a href=""><i class="bi bi-facebook"></i></a></li>
+                <li><a href=""><i class="bi bi-snapchat"></i></a></li>
+                <li><a href=""><i class="bi bi-pinterest"></i></a></li>
+            </ul>
+        </div>
+
+    </footer>
+    <!-- footer molakisi -->
+
+
+    <div class="copyright">
+        <p>Copyright @Molakisi2023</p>
+    </div>
+   
+    <script src="../js/modal.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,264 @@
+
+/*---------------------ours variables-----------------------*/
+/*-------------
+    les styles pour la page
+    -le header
+    -le formulaire et le modal de l'index
+    -la page tutors
+*/
+
+
+
+/*---------------------pour le modal de la page home/-----------------------*/
+* {box-sizing: border-box}
+.container__modal {
+  padding: 0.8rem;
+  font-size: 0.8rem;
+}
+
+.modal {
+  display: none; /* par défaut c'est caché */
+  position: fixed; /* Reste sur place */
+  z-index: 1; /* Placer sur le top */
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: none;
+  /* background-color: transparent; */
+  padding-top: 50px;
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.753); /* Black w/ opacity */
+  -webkit-animation-name: fadeIn; /* Fade in the background */
+  -webkit-animation-duration: 0.4s;
+  animation-name: fadeIn;
+  animation-duration: 0.4s;
+
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  text-align: center;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid var(--primary-color);
+  width: 30%;
+  border-radius: 1rem;
+  -webkit-animation-name: slideIn;
+  -webkit-animation-duration: 0.4s;
+  animation-name: slideIn;
+  animation-duration: 0.8s
+}
+
+/* Style du contenaire of modal and elmts */
+.container__modal h2{
+  color: var(--profiler-color);
+  font-size: 1.8rem;
+  margin-top: 1.6rem;
+}
+hr {
+  border: 3px solid #f1f1f1;
+  margin: 0.8rem 0;
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 29rem;
+  top: 7.3rem;
+  text-align: right;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #000;
+}
+.close:hover,
+.close:focus {
+  color: var(--profiler-color);
+  cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.input__modal input:valid, textarea{
+  background-color: #f1f1f1 !important;
+}
+/* input style */
+.input__modal input, textarea, select{
+  width: 100%;
+  padding: 0.8rem;
+  margin: 0 0 1.5rem 0;
+  display: inline-block;
+  border: 1px inset var(--profiler-color);
+  background: transparent;
+  border-radius: 0.5rem;
+}
+.input__modal input:focus, select:focus, textarea:focus {
+  background-color: #ddd;
+  box-shadow: 3px 2px 1px var(--profiler-color);
+  outline: none;
+  color: var(--last-color);
+}
+.btn__connexion button {
+  background-color: var(--profiler-color);
+  color: white;
+  padding: 14px 20px;
+  margin: 0.4rem 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+  border-radius: 0.5rem;
+  font-size: 1.3rem;
+}
+
+
+.btn__connexion button:hover {
+  opacity:1;
+}
+
+.modal__bottom__form{
+  display: flex;
+  justify-content: space-between;
+  margin: 0.5rem 0;
+}
+.modal__bottom__a{
+  text-decoration: none;
+  color: var(--profiler-color);
+  font-weight: 700;
+}
+.modal__flex{
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+label{
+  text-align: left;
+}
+/*-------pour la notification pop-------*/
+
+#modal_notif{
+  padding: 1rem 1.5rem;
+}
+#modal_notif  h2{
+  margin-bottom: 1.4rem;
+  color: var(--primary-color);
+}
+
+#modal_notif p{
+  margin: 1rem 0;
+}
+#modal_notif a{
+  padding: 0.5rem 1rem;
+  color: #fff;
+  background-color: var(--primary-color);
+  border: 3px outset var(--primary-color);
+  border-radius: 2rem;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+    width: 100%;
+  }
+}
+
+/*--------------modal de la page inscription_user--------------*/
+/* Style formulaire */
+#regForm {
+  background-color: #ffffff;
+  margin: 100px auto;
+  padding: 0 15rem;
+  width: 70%;
+  min-width: 300px;
+}
+#regForm h2{
+  margin-bottom: 2rem;
+  color: var(--primary-color);
+  text-align: center;
+}
+/* une partie de son style se trouve chez btn__connexion*/
+ #regForm .btn__connexion{
+  display: flex;
+  justify-content: end;
+  gap: 1rem;
+}
+#regForm .btn__connexion button{
+  width: 8rem;
+}
+
+
+/* Mark input boxes that gets an error on validation: */
+input.invalid {
+  background-color: #d61212a1;
+}
+
+/* Hide all steps by default: */
+.tab {
+  display: none;
+}
+
+/* Make circles that indicate the steps of the form: */
+.step {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbbbbb;
+  border: none;
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+}
+
+/* Mark the active step: */
+.step.active {
+  opacity: 1;
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+background-color: var(--primary-color);
+}
+
+/* le style pour le profil de l'user profil_user.html */
+.container__profil{
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 2rem;
+  padding: 3rem;
+}
+/* le style pour le bloc qui contient la photo de profil */
+.profil__img,
+.profil__text{
+  background-color: var(--other-color);
+  color: #383737;
+  box-shadow: 3px 2px 4px #111111d5;
+  border-radius: 1rem;
+  padding: 1rem;
+  height: max-content;
+}
+.profil__img{
+  width: 30%;
+  text-align: center;
+}
+.profil__text{
+  width: 70%;
+}
+.img__and__btn img{
+  width: 8rem;
+  border-radius: 50%;
+}
+.profil__text div {
+  display: flex;
+  gap: 1.6rem;
+  margin-bottom: 1.5rem;
+}
+.profil__text div p:first-child {
+  width: 15rem;
+}
+
+

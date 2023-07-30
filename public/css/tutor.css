@@ -1,0 +1,342 @@
+:root{
+  --primary-color: #0a88cc;
+  --secondary-color: #CCA659;
+  --last-color: #525050;
+  --other-color: #ececec;
+  --profiler-color: #0a88cc;
+  --partner-color: #FAE0D0;
+  --font-size-main: 16px;
+  --padding-main-tutor: 1.8rem 2rem;
+  --padding-respo: 1rem;   
+}
+/*-------------
+    les styles pour la page
+    -devenir_tutor
+    -trouver_tutors
+    -insc3ription_user
+*/
+
+/*---------------------pour la page devenir_tutors/-----------------------*/
+.container__tutor{
+    background-color: var(--other-color);
+    height: max-content;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  .tutor__text{
+    padding: 2rem;
+    width: 100%;
+  }
+  .tutor__text h3 span{
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    width: 20rem;
+    height: 4rem;
+  }
+  
+  .tutor__text h2{
+    font-size: 3.2rem;
+    margin-top: 0.5rem;
+    color: var(--primary-color);
+    line-height: 4.2rem;
+    font-weight: 900;
+  }
+
+  .tutor__text p{
+    margin: 3rem 0;
+    font-size: 1.1rem;
+  }
+  .tutor__btn_bloc{
+    width: 30%;
+  }
+  .tutor__btn{
+    border-radius: 0.6rem;
+    border: none;
+    color: var(--other-color);
+    padding: 1rem;
+    background: var(--primary-color);
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: 1s all;
+  }
+  .tutor__btn:hover{
+    border: 3px inset var(--primary-color);
+    color: var(--primary-color);
+    background-color: transparent;
+  }
+  .tutor__btn:active{
+    color: #111;
+  }
+  .tutor__image{
+    height: 70vh;
+    width: 100%;
+    padding: 0;
+  }
+    
+  .tutor__image img{
+     width: 100%;
+    height: 100%; 
+  }
+  
+  /* les premiers styles sont inclus dans la section précedente */
+  .stat__number{
+    display: flex;
+    justify-content: center;
+    gap: 8rem;
+    margin: 6rem 0;
+    font-size: 1.3rem;
+  } 
+  .stat__number div h4{
+    font-size: 3rem;
+  }
+  .stat__number .first__color h4{
+    color: var(--secondary-color);
+  }
+  .second__color h4{
+    color: #f80eaa;
+  }
+  .green__color h4{
+    color: green;
+  }
+  /*---------section statistique tutor---------*/
+  .tutor__student{
+    background-color: var(--other-color);
+    color: var(--primary-color);
+    height: 100vh;
+    padding: var(--padding-main-tutor);
+  }
+  .student__title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+  }
+  .student__title h2{
+    font-size: 3.6rem;
+    font-weight: bolder;
+    margin-right: 3rem;
+  }
+  .student__title .tutor__btn{
+    background-color: var(--other-color);
+    color: var(--primary-color);
+    margin-right: 0.8rem;
+    border: 3px inset var(--primary-color);
+  }
+  .student__title .tutor__btn:hover{
+    color: var(--other-color);
+    background-color: var(--primary-color);
+    border: 3px inset var(---color);
+  }
+  .student__detail{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    gap: 4rem;
+    margin: 6rem 0 0 0;
+    font-weight: 300;
+    color: var(--last-color);
+  }
+  .student__detail div i{
+    font-size: 4rem;
+    margin-bottom: 1rem;
+  }
+  .student__detail h4{
+    font-weight: 900;
+    margin-bottom: 0.6rem;
+  }
+  /*---------section flux d'etudiant---------*/
+  /*.become__tutor{
+  
+  }*/
+  /*---------section become tutor steps---------*/
+  
+  
+/*--##########-------Page trouver un tutors-----------------------*/
+.container__tutors{
+    background-image: url(../images/bg_tutor2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.container__tutors .bg_trans{
+    background-color: rgba(0,0,0,0.5);
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    padding: var(--padding-main);
+}
+.bg_trans div {
+   width: 70%;
+   color: var(--other-color);
+}
+.container__tutors div h2{
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 3rem;
+    margin-bottom: 1rem;
+}
+.container__tutors div p{
+    margin: 2rem 0;
+}
+.btn_get_tutor{
+    background-color: var(--primary-color);
+    color: var(--other-color);
+    padding: 1rem 2rem;
+    border-radius: 0.8rem;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.8s ease;
+} 
+.btn_get_tutor:hover{
+    border: 3px inset var(--primary-color);
+    background-color: transparent;
+    color: #f1f1f1b9;
+}
+.btn_get_tutor:active{
+  border: 3px inset var(--other-color);
+  color: var(--other-color);
+}
+/*---------------------section 3 =  Les avantages du répétiteur-----------------------*/
+.container__avance{
+    text-align: center;
+    padding: var(--padding-main-tutor);
+    color: #111;
+}
+.container__avance h2{
+    font-size: 1.7rem;
+    font-weight: bolder;
+}
+.avance__detail{
+    margin: 3rem 0;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    gap: 2rem;
+}
+.avance__detail .avance__img{
+    font-size: 3rem;
+    /* ajouter le bg  */
+}
+.avance__detail .bloc1 h4{
+    font-size: 1.4rem;
+    margin: 1rem 0;
+    font-weight: 800;
+}
+/*---------------------section trois =  La satisfaction avec un répétiteur-----------------------*/
+.container__satisfaction{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+.satisfaction__text{
+    background-color: var(--primary-color);
+    color: var(--other-color);
+    padding: var(--padding-main);
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+.satisfaction__icon{
+    font-size: 5rem;
+}
+.satisfaction__img,
+.satisfaction__text{
+  width: 50rem;
+  height: 30rem;
+}
+.satisfaction__text h2{
+    font-size: 2.5rem;
+    line-height: 3rem;
+    margin: 2rem 0;
+    font-weight: 900;
+}
+.satisfaction__img img{
+    width: 50rem;
+}
+/*---------section présentation devenir tutor de la page---------*/
+.container__liste, .tutor__stat{
+  text-align: center;
+  padding: var(--padding-main-tutor);
+}
+.liste__title, .stat__title{
+  margin: 0 20rem;
+  font-size: 1.1rem;
+}
+.liste__title h2, .tutor__stat h2{
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+}
+.liste__profil{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin: 2rem 0;
+  width: 100%;
+
+}
+.bloc__profil a{
+  color: #111;
+}
+.bloc__profil{
+  position: relative;
+  border: 1px outset #111;
+  border-radius: 0.5rem;
+  padding: 0;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.bloc__profil img{
+  width: 15rem;
+  height: auto;
+  display: block;
+  transform: scale(0.9, 0.9);
+  transition: transform 0.2s ease-in;
+}
+.bloc__profil img:hover{
+  transform: scale(1, 1);
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+.bloc__profil .img__text {
+  position: absolute;
+  top: 80%;
+  left: 40%;
+  width: 70%;
+  transform: translate(-50%, -50%);
+  /* background: rgba(0, 0, 0, 0.459); */
+  /* padding: 1rem; */
+  text-align: left;
+  color: var(--other-color);
+}
+.img__text h4{
+  font-size: 1.6rem;
+}
+
+
+
+
+/*---------section présentation profil de tutor---------*/
+/*------------------Page tutors_postuler-------------*/
+.container__inscription{
+  background-color: #f1f1f1b9;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  border-top: 2px solid var(--primary-color);
+  box-shadow: 2px 4px;
+}
+.form__postuler{
+    width: 40%;
+    margin: 3rem 0;
+}

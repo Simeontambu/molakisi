@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Molakisi - Trouver un répétiteur</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../../public/images/logo_black.png" type="image/x-icon">
+    <!--Google icons-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!--Bootstrap icon-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="../css/other_style.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/tutor.css">
+    <link rel="stylesheet" href="../css/responsive_style.css">
+</head>
+<body>
+    <header>
+        <div class="header__large">
+            <!--logo du header-->
+            <div class="header__logo">
+                <a href="/"><img src="../images/logo_black.png" alt=""></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="/">Accueil</a></li>
+                    <li><a href="/tutors_devenir">Devenir un répétiteur</a></li>
+                    <li><a href="/trouver_tutors">Trouver un répétiteur</a></li>
+                    <li><a href="#" class="header__btn"
+                            onclick="document.getElementById('id01').style.display='block'"><i
+                                class=" bi bi-box-arrow-in-right"></i> Login</a></li>
+
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+    <div class="header__respo">
+        <div class="logo_and_burger">
+            <!--logo du header-->
+            <div class="logo">
+                <a href="/"><img src="../images/logo_black.png" alt=""></a>
+            </div>
+            <!--icon burger-->
+            <div class="burger" >
+                <a href="#"  id="affiche__menu"  onclick="toggleBloc()" >
+                        <i class="bi bi-menu-button-wide-fill" ></i>
+                </a>
+            </div>
+        </div>
+        
+        <nav class="menu__burger"  id="mon-bloc">
+            <ul>
+                <li><a href="/">Accueil</a></li>
+                <li><a href="/tutors_devenir">Devenir un répétiteur</a></li>
+                <li><a href="/trouver_tutors">Trouver un répétiteur</a></li>
+                <li><a href="#" class="header__btn"
+                        onclick="document.getElementById('id01').style.display='block'"><i
+                            class=" bi bi-box-arrow-in-right"></i> Login</a></li>
+
+            </ul>
+        </nav>
+        
+    </div>
+    
+  
+
+    <main>
+        <section class="container__tutors bg">
+            <div class="bg_trans">
+                <div>
+                    <h2>Service expert d'enseignement à domicile</h2>
+                   
+                    <p>
+                        Réservez des leçons individuelles avec des répétiteurs certifiés proche de chez vous.
+                    </p>
+                    <div>
+                        <a href="/trouver_tutors/inscription_user" class="btn_get_tutor">Trouver un répétiteur</a>
+                        <!-- <a href="./inscription_user.html" class="btn_get_tutor">Prendre un tuteur</a> -->
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+
+        <section class="container__avance">
+            <h2>Donnez de l'avance à vos enfants à l'école</h2>
+            <div class="avance__detail">
+                <div class="bloc1">
+                    <div class="avance__img">
+                        <i class=" bi bi-person-fill-check"></i> 
+                    </div>
+                    <h4>Répétiteurs de haute qualité</h4>
+                    <p> 
+                        Tous les répétiteurs sont expérimentés, minutieusement contrôlés et 
+                        ont fait leurs preuves en produisant d'excellents résultats.
+                    </p>
+
+                </div>
+
+                <div class="bloc1">
+                    <div class="avance__img">
+                        <i class=" bi bi-shield-check"></i> 
+                    </div>
+                    <h4>Sûr et fiable</h4>
+                    <p>
+                        Plus de 1000 parents ont utiliser Molakisi Service pour améliorer les résultats de leurs enfants,
+                         obtenir de l’aide pour les devoirs et réussir les examens
+                    </p>
+
+                </div>
+
+                <div class="bloc1">
+                    <div class="avance__img">
+                        <i class=" bi bi-mortarboard-fill"></i> 
+                    </div>
+                    <h4>répétiteurs de haute qualité</h4>
+                    <p> 
+                        Tous les répétiteurs sont expérimentés, minutieusement contrôlés et 
+                        ont fait leurs preuves en produisant d'excellents résultats.
+                    </p>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="container__satisfaction">
+            <div class="satisfaction__text">
+                <div class="satisfaction__icon">
+                    <i class=" bi bi-award"></i> 
+                </div>
+                <h2>Satisfaction garantie à 100 %</h2>
+                <p>
+                    Nous nous engageons à la réussite de votre enfant et faisons 
+                    toujours de notre mieux pour vous assurer d'atteindre vos objectifs.
+                    Si vous n'êtes pas satisfait, nous nous efforcerons d'y remédier.
+                </p>
+
+            </div>
+            <div class="satisfaction__img">
+                <img src="../../public/images/img_satisfaction.webp" alt="">
+            </div>
+        </section>
+
+        <!-- la liste de tous les tutors qui sont dans molakisi -->
+        <section class="container__liste">
+            <div class="liste__title" id="Ltutors">
+                <h2>Partagez avec le monde ce qui vous passionne, ce que vous maîtrisez  comme répétiteur et changez de vies. </h2>
+                <p>Devenez un enseignant entrepreneur avec Molakisi Services.</p>
+            </div>
+            <div class="liste__profil">
+                <div class="bloc__profil">
+                    <a href="/trouver_tutors/inscription_user">
+                        <img src="../images/img__tutor.jpg" alt="">
+                        <div class="img__text ">
+                            <h4>Chinasa</h4>
+                            <p>Tuteur de Francais et anglais</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="bloc__profil">
+                    <a href="/trouver_tutors/inscription_user">
+                        <img src="../images/img__tutor.jpg" alt="">
+                        <div class="img__text ">
+                            <h4>Chinasa</h4>
+                            <p>Tuteur de Francais et anglais</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="bloc__profil">
+                    <a href="/trouver_tutors/inscription_user">
+                        <img src="../images/img__tutor.jpg" alt="">
+                        <div class="img__text ">
+                            <h4>Chinasa</h4>
+                            <p>Tuteur de Francais et anglais</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="bloc__profil">
+                    <a href="/trouver_tutors/inscription_user">
+                        <img src="../images/img__tutor.jpg" alt="">
+                        <div class="img__text ">
+                            <h4>Chinasa</h4>
+                            <p>Tuteur de Francais et anglais</p>
+                        </div>
+                    </a>
+                </div>
+               
+                    
+                
+            </div>
+        </section>
+        <!-- la liste de tous les tutors qui sont dans molakisi -->
+
+        <section class="container__get__tutor">
+            <!-- <h2>Comment obtenir un tuteur à domicile</h2> -->
+        </section>
+
+         <!-- Le modal pour le login -->
+         <section>
+            <div id="id01" class="modal">
+                <form class="modal-content" id="modal__login" action="">
+                    <div class="container__modal">
+                        <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                            title="Fermer le modal"><i class="bi bi-x-circle"></i></span>
+                        <h2>Se connecter </h2>
+                        <p>Complètez pour accèder à votre compte.</p>
+                        <hr>
+                        <!-- <label for="email"><b>Email</b></label> -->
+                        <div class="input__modal">
+                            <input type="text" placeholder="Email" name="email" autocomplete="off" required>
+                            <input type="password" placeholder="Mot de passe" name="psw" autocomplete="off" required>
+                        </div>
+
+                        <!-- <label for="psw"><b>Mot de passe</b></label> -->
+                        <div class="clearfix btn__connexion">
+                            <button type="submit" class="connexion">Connexion </button>
+                        </div>
+
+                        <hr>
+                        <div class="modal__flex">
+                            <p>Nouveau Membre ? <a href="/inscription_user" id="show__inscrip" class="modal__bottom__a">S'inscrire</a>
+                            </p>
+                            <p><a href="" class="modal__bottom__a"> Besoin d'aide ?</a></p>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <!-- Le modal pour le login -->
+    </main>
+         <!-- footer molakisi -->
+         <footer class="container__footer">
+            <div class="footer__logo">
+                <a href="index"><img src="../images/logo_white.png" alt=""></a>
+            </div>
+            <div class="footer__text">
+                <h3>A Propos</h3>
+                <p>
+                    Molakisi Services vous connecte avec les répétiteurs expérimentés et qualifiés proche de chez vous. C’est un service spécialisé dans dans le cours à domicile et dans l'accompagnement scolaire des élèves. 
+                </p>
+            </div>
+            <div class="footer__text">
+                <h3>Nos Adresses</h3>
+                <p>
+                    Av. Sergent Moke n°10.651 C/Kintambo Cfr/Rond point SOCIMAT/ Dans l’enceinte de BOUKIN. 
+                </p>
+            </div>
+            <div class="footer__text">
+                <h3>Souscrire à notre newsletter </h3>
+                <p>
+                    Recevez des informations sur les techniques d’accompagnement scolaire et les offres de Molakisi Service. 
+                </p>
+                <div class="newsletters">
+                    <input type="text" placeholder="Votre mail..." oninput="this.className = ''" class="newsletters__btn"> <br>
+                    <button type="submit" class="newsletters__btn">Souscrire</button>
+
+                </div>
+                <ul>
+                    <li><a href=" https://api.whatsapp.com/send/?phone=243893404985&text&type=phone_number&app_absent=0 "><i class="bi bi-whatsapp"></i></a></li>
+                    <li><a href="https://web.facebook.com/molakisiservices/?_rdc=1&_rdr "><i class="bi bi-facebook"></i></a></li>
+                    <li><a href=""><i class="bi bi-twitter"></i></a></li>
+                    <li><a href=""><i class="bi bi-pinterest"></i></a></li>
+                </ul>
+            </div>
+
+        </footer>
+        <!-- footer molakisi -->
+
+
+
+    <div class="copyright">
+        <p>Copyright @Molakisi2023</p>
+    </div>
+
+    <script src="../js/modal.js"></script>
+
+    
+</body>
+</html>

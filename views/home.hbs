@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenue sur Molakisi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../public/images/Original.png" type="image/x-icon">
+    <!--Google icons-->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!--Bootstrap icon-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/other_style.css">
+    <link rel="stylesheet" href="../css/responsive_style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="header__large">
+            <!--logo du header-->
+            <div class="header__logo">
+                <a href="/"><img src="../images/logo_black.png" alt=""></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="/">Accueil</a></li>
+                    <li><a href="/tutors_devenir">Devenir un répétiteur</a></li>
+                    <li><a href="/trouver_tutors">Trouver un répétiteur</a></li>
+                    <li><a href="#" class="header__btn"
+                            onclick="document.getElementById('id01').style.display='block'"><i
+                                class=" bi bi-box-arrow-in-right"></i> Login</a></li>
+
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+
+    <div class="header__respo">
+        <div class="logo_and_burger">
+            <!--logo du header-->
+            <div class="logo">
+                <a href="/"><img src="../images/logo_black.png" alt=""></a>
+            </div>
+            <!--icon burger-->
+            <div class="burger" >
+                <a href="#"  id="affiche__menu"  onclick="toggleBloc()" >
+                        <i class="bi bi-menu-button-wide-fill" ></i>
+                </a>
+            </div>
+        </div>
+        
+        <nav class="menu__burger"  id="mon-bloc">
+            <ul>
+                <li><a href="/">Accueil</a></li>
+                <li><a href="/tutors_devenir">Devenir un répétiteur</a></li>
+                <li><a href="/trouver_tutors">Trouver un répétiteur</a></li>
+                <li><a href="#" class="header__btn"
+                        onclick="document.getElementById('id01').style.display='block'"><i
+                            class=" bi bi-box-arrow-in-right"></i> Login</a></li>
+
+            </ul>
+        </nav>
+        
+    </div>
+
+
+
+    <main>
+        <!-- premiere section trouver un répétiteur  -->
+        <section class="repetiteur ">
+            <div class="bg_respo">
+                <div class="repetiteur__bloc__text">
+                    <p>
+                        Pour <b>un meilleur apprentissage</b> de <b>vos enfants</b>
+                        , nous mettons à votre disposition <b>des répétiteurs expérimentés</b>
+                        proche de vous !
+                    </p>
+
+                    <a href="/trouver_tutors">Trouver un répétiteur</a>
+
+                </div>
+            </div>
+
+        </section>
+
+        <!-- la section du texte welcome -->
+        <section class="bloc__bienvenue">
+            <h2>Molakisi Services vous connecte avec les répétiteurs expérimentés et qualifiés proche de chez vous</h2>
+        </section>
+
+        <!-- la section du container avec 4 blocs -->
+        <section class="container__section4">
+            <div>
+                <span class="material-symbols-outlined icon__bloc">group</span>
+                <h3>Professionnels de confiance</h3>
+                <p>
+                    Chaque tuteur est expérimenté, amical, sélectionné manuellement et minutieusement contrôlé pour la
+                    plus haute qualité.
+                </p>
+            </div>
+
+            <div>
+                <span class="material-symbols-outlined icon__bloc">calendar_month </span>
+                <h3>Apprenez à votre rythme</h3>
+                <p>
+                    Réservez en ligne en 60 secondes environ et planifiez vos cours particuliers selon votre propre
+                    emploi du temps.
+                </p>
+            </div>
+
+            <div>
+                <span class="material-symbols-outlined icon__bloc">verified_user</span>
+                <h3>Sûr et sécurisé</h3>
+                <p>
+                    Reconnu par des centaines de parents heureux, de professionnels et d'étudiants avec un taux de
+                    réussite de plus de 90 %.
+                </p>
+            </div>
+        </section>
+
+        <!-- info de Molakisi avec une photo et un texte -->
+        <section class="info__molakisi">
+            <div class="info__image">
+                <img src="../images/child__course.jpg" alt="">
+            </div>
+            <div class="info__text">
+                <h3>Besoin de tuteurs à domicile pour vos enfants ?</h3>
+                <h4>Faites avancer vos enfants tôt</h4>
+                <p>
+                    Améliorez les performances en classe, obtenez de l'aide pour les devoirs, renforcez la confiance
+                    dans les points faibles, soyez fier des résultats de vos enfants.
+                </p>
+
+                <h4> Engagez des tuteurs en qui vous pouvez avoir confiance</h4>
+                <p>
+                    Obtenez des tuteurs à domicile entièrement contrôlés qui sont spécifiquement expérimentés
+                    dans l'enseignement, le mentorat et l'inspiration d'enfants comme le vôtre.
+                </p>
+
+            </div>
+        </section>
+
+        <!-- container faq -->
+        <section class="container__faq">
+            <div class="faq__title">
+                <h2>faq</h2>
+                <b>Les Questions que les parents se posent !</b>
+            </div>
+            <div class="faq__text">
+                <div class="faq__collapse">
+                    <button type="button" class="collapsible">Où auront lieu les cours ?</button>
+                    <div class="content">
+                        <p> 
+                            Les cours se déroulent dans le confort de votre maison ou de tout autre endroit qui vous convient le mieux. Vous pouvez choisir d'avoir des leçons dispensées en personne ou en ligne par votre répétiteur à domicile préféré.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq__collapse">
+                    <button type="button" class="collapsible">Que se passe-t-il si je ne suis pas satisfait de mon répétiteur ?</button>
+                    <div class="content">
+                        <p> 
+                            Dans le cas peu probable où vous ne seriez pas satisfait de votre répétiteur, nous le remplacerons immédiatement ou rembourserons votre solde.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq__collapse">
+                    <button type="button" class="collapsible">Comment fonctionne le paiement ?</button>
+                    <div class="content">
+                        <p> 
+                            Les frais d’inscription au service de Molakisi s’élève généralement à $5 par apprenant et le coût de la leçon est fixer par le répétiteur, vous pouvez payer en ligne ou par virement bancaire lorsque vous avez sélectionné votre répétiteur préféré et que vous êtes prêt à commencer avec les cours. les frais de cours sont payé en deux tranches (un acompte au début avant de débuter avec le cours et le solde après deux semaines).
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq__collapse">
+                    <button type="button" class="collapsible">Commente sélectionnez-vous vos répétiteurs ?</button>
+                    <div class="content">
+                        <p> 
+                            Chaque répétiteur est soigneusement sélectionné pour son expertise, sa personnalité et sa sécurité. En fait, avant d'accepter un répétiteur, nous vérifions ses cartes d'identité et ses profils en ligne délivrés par le gouvernement, menons de longs entretiens, testons ses connaissances sur chaque sujet et vérifions ses garants pour assurer votre tranquillité d'esprit.
+                        </p>
+                    </div>
+                </div>
+
+                
+               
+
+            </div>
+        </section>
+        
+        
+        <!-- Le modal pour le login -->
+        <section>
+            <div id="id01" class="modal">
+                <form class="modal-content" id="modal__login" action="/auth/loginUser" method="POST">
+                    <div class="container__modal">
+                        <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                            title="Fermer le modal"><i class="bi bi-x-circle"></i></span>
+                        <h2>Se connecter </h2>
+                        <p>Complètez pour accèder à votre compte.</p>
+                        {{#if message}}
+                            <h4 class="alert alert-danger mt-4">{{message}}</h4>
+                        {{/if}}
+                        <hr>
+                        <!-- <label for="email"><b>Email</b></label> -->
+                        <div class="input__modal">
+                            <input type="text" placeholder="Email" name="email" autocomplete="off" required>
+                            <input type="password" placeholder="Mot de passe" name="password" autocomplete="off" required>
+                        </div>
+                        <!--div class="checkbox mb-3">
+                            <label>
+                            <input type="checkbox"  id="monBouton"> Afficher le mot de passe
+                            </label>
+                        </div-->
+
+                        <!-- <label for="psw"><b>Mot de passe</b></label> -->
+                        <div class="clearfix btn__connexion">
+                            <button type="submit" class="connexion">Connexion </button>
+                            <!-- quand on clique ici, il nous amene vers le profil de l'user -->
+                        </div>
+
+
+
+                       
+                        <hr>
+                        <div class="modal__flex">
+                            <p>Nouveau Membre ? <a href="#" class="modal__bottom__a" id="btn__inscript">S'inscrire</a>
+                            </p>
+                            <p><a href="#" class="modal__bottom__a"> Besoin d'aide ?</a></p>
+                        </div>
+
+
+
+
+
+                    </div>
+                </form>
+
+                <!-- formulaire d'inscription_user -->
+                <form class="modal-content" id="modal__inscript" action="/auth/registerUser" method="POST">
+                    <div class="container__modal">
+                        <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                            title="Fermer le modal"><i class="bi bi-x-circle"></i></span>
+                        <h2>Inscription </h2>
+                        <p>Complètez pour vous inscrire.</p>
+                        {{#if message}}
+                             <h4 class="alert alert-danger mt-4">{{message}}</h4>
+                        {{/if}}
+                        <hr>
+                        <!-- <label for="email"><b>Email</b></label> -->
+                        <div class="input__modal">
+                            <input type="text" placeholder="name" name="name" autocomplete="off" required>
+                        </div>
+                        <div class="input__modal">
+                            <input type="text" placeholder="prenom" name="prenom" autocomplete="off" required>
+                        </div>
+                        <div class="input__modal">
+                            <input type="email" placeholder="Email" name="email" autocomplete="off" required>
+                        </div>
+                        <div class="input__modal">
+                            <input type="password" placeholder="Password" name="password" autocomplete="off" required>
+                        </div>
+                        <div class="input__modal">
+                            <input type="password" placeholder="Retaper votre Password" name="passwordconfirm" autocomplete="off" required>
+                        </div>
+                        <div class="clearfix btn__connexion">
+                            <button type="submit" class="connexion">S'inscrire </button>
+                            <!-- quand on clique ici, il nous amene vers le profil de l'user -->
+                        </div>
+                       
+                        <hr>
+                        <div class="modal__flex">
+                            <p>Déjà Membre ? <a href="#" class="modal__bottom__a" id="btn__login">Se connecter</a>
+                                <!-- <p>Nouveau Membre ? <a href="./trouver_tutors.html#Ltutors" class="modal__bottom__a">S'inscrire</a> -->
+                            </p>
+                            <p><a href="#" class="modal__bottom__a"> Besoin d'aide ?</a></p>
+                        </div>
+
+
+                        <!-- <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p> -->
+
+
+
+                    </div>
+                </form>
+            </div>
+        </section>
+        <!-- Le modal pour le login -->
+
+
+        <!-- footer molakisi -->
+        <footer class="container__footer">
+            <div class="footer__logo">
+                <a href="index"><img src="../images/logo_white.png" alt=""></a>
+            </div>
+            <div class="footer__text">
+                <h3>A Propos</h3>
+                <p>
+                    Molakisi Services vous connecte avec les répétiteurs expérimentés et qualifiés proche de chez vous. C’est un service spécialisé dans dans le cours à domicile et dans l'accompagnement scolaire des élèves. 
+                </p>
+            </div>
+            <div class="footer__text">
+                <h3>Nos Adresses</h3>
+                <p>
+                    Av. Sergent Moke n°10.651 C/Kintambo Cfr/Rond point SOCIMAT/ Dans l’enceinte de BOUKIN. 
+                </p>
+            </div>
+            <div class="footer__text">
+                <h3>Souscrire à notre newsletter </h3>
+                <p>
+                    Recevez des informations sur les techniques d’accompagnement scolaire et les offres de Molakisi Service. 
+                </p>
+                <div class="newsletters">
+                    <input type="text" placeholder="Votre mail..." oninput="this.className = ''" class="newsletters__btn"> <br>
+                    <button type="submit" class="newsletters__btn">Souscrire</button>
+
+                </div>
+                <ul>
+                    <li><a href="https://api.whatsapp.com/send/?phone=243893404985&text&type=phone_number&app_absent=0 "><i class="bi bi-whatsapp"></i></a></li>
+                    <li><a href="https://web.facebook.com/molakisiservices/?_rdc=1&_rdr "><i class="bi bi-facebook"></i></a></li>
+                    <li><a href=""><i class="bi bi-twitter"></i></a></li>
+                    <li><a href=""><i class="bi bi-pinterest"></i></a></li>
+                </ul>
+            </div>
+
+        </footer>
+        <!-- footer molakisi -->
+
+
+        <div class="copyright">
+            <p>Copyright @Molakisi2023</p>
+        </div>
+
+
+    </main>
+    <script src="../js/modal.js"></script>
+    <script>
+        //pour afficher et cacher le mdp
+        document.getElementById( 'monBouton' ).addEventListener( "click", function() {
+        
+        attribut = document.getElementById( 'pass' ).getAttribute( 'type');
+        if(attribut == 'password'){
+            document.getElementById( 'pass' ).setAttribute( 'type', 'text');
+        } else {
+            document.getElementById( 'pass' ).setAttribute( 'type', 'password');
+        }
+        
+        });
+    </script>
+
+</body>
+
+</html>
